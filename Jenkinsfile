@@ -17,8 +17,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                // probably missing here or somewhere else
+                sh 'gradle test'
             }
         }
-    }  // make sure this closes stages
-}  // make sure this closes pipeline
+    }
+}
